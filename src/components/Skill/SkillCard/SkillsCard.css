@@ -1,0 +1,43 @@
+.skill-card {
+    background-color: #2a2a3d;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #6c63ff; /* Outer border around skill card */
+    background-clip: padding-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05); /* Slight hover effect */
+  }
+  
+  .skill-card h3 {
+    text-align: left;
+    color: #b5b5e5;
+    margin-bottom: 15px;
+  }
+  
+  .skill-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-card li {
+    margin-bottom: 15px;
+  }
+
+  
+  .skill-bar {
+    background-color: #3d3d5c;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px;
+  }
+  
+  .skill-level {
+    background: linear-gradient(264deg, #DE8908 -5.09%, #B415FF 106.28%);
+    height: 100%;
+    transition: width 0.4s ease;
+  }
+  

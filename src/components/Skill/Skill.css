@@ -1,0 +1,120 @@
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 12px;
+    color: #fff;
+    flex-wrap: wrap; /* To handle responsiveness */
+  }
+  
+  .skill-title {
+    width: 100%; /* Ensures title spans across the width of the container */
+    display: flex;
+    justify-content: center; /* Horizontally centers the h1 */
+    align-items: center; /* Vertically centers the h1 */
+    margin-bottom: 50px; /* Adds spacing between the title and the skill sections */
+  }
+  
+  .skill-title h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #eeeef7; /* Adjust color to match your design */
+  }
+  
+  .left-container, .right-container {
+    flex-basis: 45%;
+  }
+  
+  /* Flex column for right container */
+    
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #6c63ff; /* Add border around the right container */
+    border-radius: 12px; /* Round the box edges */
+    padding: 20px;
+    background-color: #2a2a3d; /* Background color for right container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow for more 3D effect */
+  }
+  
+  .category-card {
+    background-color: #2a2a3d;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   
+    background-clip: padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+  }
+  
+  .category-card:hover, .category-card.active {
+    background: linear-gradient(264deg, #DE8908 -5.09%, #B415FF 106.28%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .category-card.active {
+    border: 2px solid #DE8908;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column; /* Stack the containers vertically */
+      padding: 20px;
+      max-width: 100%; /* Allow the container to take the full width on smaller screens */
+    }
+  
+    .skill-title h1 {
+      font-size: 36px; /* Reduce font size for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .left-container, .right-container {
+      flex-basis: 100%; /* Full width on mobile */
+      margin-bottom: 20px; /* Adds spacing between containers */
+    }
+  
+    .right-container {
+      padding: 15px;
+      gap: 15px; /* Reduce gap between the category cards */
+      box-shadow: none; /* Optionally reduce shadow for mobile */
+    }
+  
+    .category-card {
+      font-size: 1.7em; /* Adjust font size for mobile */
+      padding: 15px;
+    }
+  
+    .category-card:hover, .category-card.active {
+      transform: scale(1.03); /* Adjust hover effect scale for smaller screens */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow on mobile hover */
+    }
+  
+    .left-container {
+      padding: 10px;
+      border-radius: 8px; /* Slightly rounder corners */
+    }
+  
+    /* You can also add a margin or padding to ensure content doesn't stick to the edges */
+    body {
+      padding: 20px;
+    }
+  }
+  
+
+
+
+
+
+
